@@ -15,4 +15,7 @@ public class Rabbit extends Animal {
     public void play(Toy toy) {
         System.out.println("Rabbit " + name + " is ignoring the toy " + toy);
     }
+
+    public String Dash(){return "Dash";};
+
 }

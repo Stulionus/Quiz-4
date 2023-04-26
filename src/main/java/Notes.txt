@@ -1,0 +1,39 @@
+Syntax for interface:
+
+
+public interface Action {
+    public void play();
+
+    public void play(Toy toy);
+
+}
+
+Then in class call this: implements Action
+
+Because of this, this works:
+
+Action[] animals = new Action[]{coco, max, rabbit, robot};
+        for (Action friend : animals) {
+            friend.play(legoCar);
+        }
+
+//All objects are of type action because the share this interface
+
+Syntax for class inheritance:
+
+public abstract class Animal implements Action {
+
+    // These variables are going to be shared across all classes that have "extends Animal"
+    protected String name;
+    protected int age;
+
+    public Animal(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+
+}
+
+Then in subclasses call this: extends Animal
+

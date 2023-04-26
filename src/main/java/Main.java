@@ -11,5 +11,11 @@ public class Main {
         for (Action friend : animals) {
             friend.play(legoCar);
         }
+
+        Action[] animalsDashing = new Action[] {coco, max};
+        for (Action friend : animalsDashing) {
+            System.out.println(friend.Dash());
+        }
+
     }
 }

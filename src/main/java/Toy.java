@@ -20,4 +20,7 @@ public class Toy implements Action {
     public String toString() {
         return name;
     }
+
+    public String Dash(){return "Dash";};
+
 }

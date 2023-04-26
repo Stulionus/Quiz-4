@@ -3,4 +3,7 @@ public interface Action {
 
     public void play(Toy toy);
 
+    public String Dash();
+
 }
+
